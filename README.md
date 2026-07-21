@@ -21,3 +21,11 @@ A Python project demonstrating asynchronous event streaming using Apache Kafka.
 ```bash
 pip install -r requirements.txt
 ```
+Start Kafka:
+docker compose up -d
+
+Run Consumer:
+python consumer.py
+
+Run Producer:
+python producer.py
