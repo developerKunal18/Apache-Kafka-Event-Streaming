@@ -1,0 +1,53 @@
+🧠 Why This Is Important
+
+Traditional communication:
+Service A
+   │
+HTTP Request
+   ▼
+Service B
+
+Both services must be online at the same time.
+
+With Kafka:
+Producer
+    │
+    ▼
++------------+
+|   Kafka    |
+|   Topic    |
++------------+
+    │
+    ▼
+Consumer
+
+The producer and consumer are decoupled and communicate asynchronously.
+
+Benefits:
+✅ High throughput
+✅ Fault tolerance
+✅ Event replay
+✅ Scalable consumers
+✅ Real-time processing
+
+Used By :
+LinkedIn (Creator of Kafka)
+Netflix
+Uber
+Airbnb
+PayPal
+
+🛠 Tech Stack
+Python
+Apache Kafka
+kafka-python
+Docker
+
+📂 Project Structure
+kafka-event-streaming/
+│
+├── producer.py
+├── consumer.py
+├── requirements.txt
+├── docker-compose.yml
+└── README.md
